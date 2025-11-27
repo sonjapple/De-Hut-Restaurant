@@ -1,11 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap");
 @import url("fontawesome-all.min.css");
 
-/*
-	Helios by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
-*/
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -33,31 +29,12 @@ body {
 	line-height: 1;
 }
 
-ol, ul {
+ul {
 	list-style: none;
-}
-
-blockquote, q {
-	quotes: none;
-}
-
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
-	}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
 }
 
 body {
 	-webkit-text-size-adjust: none;
-}
-
-mark {
-	background-color: transparent;
-	color: inherit;
 }
 
 input::-moz-focus-inner {
@@ -161,24 +138,6 @@ input, select, textarea {
 			color: #ef8376;
 			border-bottom-color: transparent;
 		}
-
-	sub {
-		position: relative;
-		top: 0.5em;
-		font-size: 0.8em;
-	}
-
-	sup {
-		position: relative;
-		top: -0.5em;
-		font-size: 0.8em;
-	}
-
-	blockquote {
-		border-left: solid 0.5em #ddd;
-		padding: 1em 0 1em 2em;
-		font-style: italic;
-	}
 
 	p, ul, ol, dl, table {
 		margin-bottom: 1em;
@@ -1827,15 +1786,6 @@ input, select, textarea {
 			padding-left: 0.5em;
 		}
 
-	ol {
-		list-style: decimal;
-		padding-left: 1.25em;
-	}
-
-		ol li {
-			padding-left: 0.25em;
-		}
-
 /* Actions */
 
 	ul.actions {
@@ -1949,10 +1899,11 @@ input, select, textarea {
 
 	form input[type="text"],
 	form input[type="email"],
-	form input[type="password"],
+	form input[type="tel"],
 	form select,
 	form textarea {
 		-webkit-appearance: none;
+		appearance: none;
 		display: block;
 		border: 0;
 		background: #fafafa;
@@ -1968,7 +1919,7 @@ input, select, textarea {
 
 		form input[type="text"]:focus,
 		form input[type="email"]:focus,
-		form input[type="password"]:focus,
+		form input[type="tel"]:focus,
 		form select:focus,
 		form textarea:focus {
 			background: #fff;
@@ -1977,7 +1928,7 @@ input, select, textarea {
 
 	form input[type="text"],
 	form input[type="email"],
-	form input[type="password"],
+	form input[type="tel"],
 	form select {
 		line-height: 1em;
 	}
@@ -2005,46 +1956,6 @@ input, select, textarea {
 	form ::-moz-focus-inner {
 		border: 0;
 	}
-
-/* Table */
-
-	table {
-		width: 100%;
-	}
-
-		table.default {
-			width: 100%;
-		}
-
-			table.default tbody tr {
-				border-top: solid 1px #e5e5e5;
-			}
-
-				table.default tbody tr:first-child {
-					border-top: 0;
-				}
-
-				table.default tbody tr:nth-child(2n+1) {
-					background: #fafafa;
-				}
-
-			table.default td {
-				padding: 0.5em 1em 0.5em 1em;
-			}
-
-			table.default th {
-				text-align: left;
-				font-weight: 400;
-				padding: 0.5em 1em 0.5em 1em;
-			}
-
-			table.default thead {
-				border-bottom: solid 2px #e5e5e5;
-			}
-
-			table.default tfoot {
-				border-top: solid 2px #e5e5e5;
-			}
 
 /* Button */
 
@@ -2490,7 +2401,7 @@ input, select, textarea {
 		#footer .copyright {
 			text-align: center;
 			color: rgba(128, 128, 128, 0.75);
-			font-size: 0.8em;
+			font-size: 1em;
 			cursor: default;
 		}
 
